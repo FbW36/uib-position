@@ -1,0 +1,90 @@
+.page {
+    min-height: 100vh;
+    background-color: mistyrose;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+}
+
+/* static, relative, absolute, fixed, sticky */
+/* 01 */
+.box-01 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* 02 */
+.content-container {
+    position: relative;
+    padding-left: 240px;
+    min-height: 200px;
+}
+
+.box-02 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+/* 03 */
+.box-03 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* center box to viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 04 */
+.overflowing-content-container {
+    width: 60%;
+    height: 50vh;
+    border: 1px solid gray;
+    overflow: scroll;
+}
+
+.box-04 {
+    position: sticky;
+    top: 0;
+}
+
+/* 05 */
+.content-container-stacking {
+    position: relative;
+    min-height: 50vh;
+    background-color: white;
+}
+
+.box-05,
+.box-06,
+.box-07 {
+    position: absolute;
+}
+
+.box-05 {
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+.box-06 {
+    top: 50px;
+    left: 50px;
+    background-color: rebeccapurple;
+}
+
+.box-07 {
+    top: 100px;
+    left: 100px;
+    background-color: blue;
+}

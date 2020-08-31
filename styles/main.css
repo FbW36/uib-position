@@ -1,0 +1,39 @@
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notification-content {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: mistyrose;
+    border-radius: 4px;
+    padding: 6rem 2rem;
+    box-shadow: 0 0 11px rgb(0 0 0 / 32%);
+}
+
+.notification-headline {
+    margin-bottom: 1.6rem; /* 16px */
+}
+
+.notification-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(../icons/close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
